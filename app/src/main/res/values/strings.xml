@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Tipr</string>
+    <string name="calculate">calculate</string>
+    <string name="tip_round_up">Round up tip?</string>
+    <string name="okay_tip">Okay (15%)</string>
+    <string name="good_tip">Good (18%)</string>
+    <string name="amazing_tip">Amazing (20%)</string>
+    <string name="service_question">How was the service?</string>
+    <string name="cost_of_service">Cost of Service</string>
+    <string name="tip_amount">Tip Amount: %.2f</string>
+    <string name="tip_amount_hint">Tip Amount: 0.0</string>
+    <string name="total_amount_hint">Total: 0.0</string>
+    <string name="total_amount">Total: %.2f</string>
+</resources>
