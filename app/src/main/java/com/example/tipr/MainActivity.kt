@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
 
         if (serviceCost == null || serviceCost == 0.0) {
             vBinding.tipAmount.text = ""
+            vBinding.totalAmount.text = ""
             return
         }
 
