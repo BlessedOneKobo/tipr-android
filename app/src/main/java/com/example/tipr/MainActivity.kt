@@ -16,6 +16,9 @@ class MainActivity : AppCompatActivity() {
         vBinding.button.setOnClickListener {
             calculateTip()
         }
+        vBinding.tipRoundUp.setOnClickListener {
+            calculateTip()
+        }
     }
 
     private fun calculateTip() {
