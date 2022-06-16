@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="vertical_gap">20dp</dimen>
+    <dimen name="margin_start">32dp</dimen>
+    <dimen name="layout_vertical_padding">32dp</dimen>
+    <dimen name="layout_horizontal_padding">12dp</dimen>
 </resources>

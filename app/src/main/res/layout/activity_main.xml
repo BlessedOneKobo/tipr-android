@@ -10,8 +10,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingHorizontal="12dp"
-        android:paddingVertical="32dp">
+        android:paddingHorizontal="@dimen/layout_horizontal_padding"
+        android:paddingVertical="@dimen/layout_vertical_padding">
 
         <ImageView
             android:id="@+id/ic_store"
@@ -28,7 +28,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
+            android:layout_marginStart="@dimen/margin_start"
             android:hint="@string/cost_of_service"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -39,7 +39,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:importantForAutofill="no"
-                android:inputType="numberDecimal" />
+                android:inputType="numberDecimal"
+                tools:ignore="TextContrastCheck" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -58,7 +59,7 @@
             style="@style/Widget.Tipr.ServiceQuestionTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
+            android:layout_marginStart="@dimen/margin_start"
             android:layout_marginTop="@dimen/vertical_gap"
             android:text="@string/service_question"
             app:layout_constraintStart_toStartOf="parent"
@@ -108,7 +109,7 @@
             style="@style/Widget.Tipr.ServiceQuestionTextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
+            android:layout_marginStart="@dimen/margin_start"
             android:layout_marginTop="@dimen/vertical_gap"
             android:checked="true"
             android:text="@string/tip_round_up"
