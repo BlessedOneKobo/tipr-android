@@ -55,6 +55,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="@dimen/vertical_gap"
         android:text="@string/service_question"
+        style="@style/Widget.Tipr.ServiceQuestionTextView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cost_of_service" />
 
@@ -124,7 +125,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/vertical_gap"
-        android:hint="@string/tip_amount_hint"
+        tools:text="Tip Amount: $0.00"
+        style="@style/Widget.Tipr.ResultView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button" />
 
@@ -133,7 +135,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/vertical_gap"
-        android:hint="@string/total_amount_hint"
+        tools:text="Total: $0.00"
+        android:textAlignment="center"
+        style="@style/Widget.Tipr.ResultView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tip_amount" />
 

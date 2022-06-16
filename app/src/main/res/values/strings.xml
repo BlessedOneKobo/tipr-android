@@ -8,7 +8,5 @@
     <string name="service_question">How was the service?</string>
     <string name="cost_of_service">Cost of Service</string>
     <string name="tip_amount">Tip Amount: %s</string>
-    <string name="tip_amount_hint">Tip Amount: 0.0</string>
-    <string name="total_amount_hint">Total: 0.0</string>
     <string name="total_amount">Total: %s</string>
 </resources>
