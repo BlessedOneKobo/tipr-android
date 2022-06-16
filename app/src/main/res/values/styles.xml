@@ -8,6 +8,5 @@
     </style>
     <style name="Widget.Tipr.ResultView" parent="Widget.MaterialComponents.TextView">
         <item name="android:textAppearance">?attr/textAppearanceHeadline6</item>
-        <item name="android:textColor">@color/black</item>
     </style>
 </resources>
