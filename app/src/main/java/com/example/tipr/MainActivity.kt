@@ -39,6 +39,7 @@ class MainActivity : AppCompatActivity() {
         }
         val fmt = NumberFormat.getCurrencyInstance()
         vBinding.tipAmount.text = getString(R.string.tip_amount, fmt.format(tipAmount))
-        vBinding.totalAmount.text = getString(R.string.total_amount, fmt.format(tipAmount + serviceCost))
+        vBinding.totalAmount.text =
+            getString(R.string.total_amount, fmt.format(tipAmount + serviceCost))
     }
 }
