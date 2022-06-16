@@ -2,8 +2,8 @@ package com.example.tipr
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import com.example.tipr.databinding.ActivityMainBinding
+import java.text.NumberFormat
 
 class MainActivity : AppCompatActivity() {
     private lateinit var vBinding: ActivityMainBinding
@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun calculateTip() {
-        val serviceCost: Double? = vBinding.costOfService.text.toString().toDoubleOrNull()
+        val serviceCost: Double? = vBinding.costOfServiceEditText.text.toString().toDoubleOrNull()
 
         if (serviceCost == null || serviceCost == 0.0) {
             vBinding.tipAmount.text = ""
@@ -37,7 +37,8 @@ class MainActivity : AppCompatActivity() {
         if (vBinding.tipRoundUp.isChecked) {
             tipAmount = kotlin.math.ceil(tipAmount)
         }
-        vBinding.tipAmount.text = getString(R.string.tip_amount, tipAmount)
-        vBinding.totalAmount.text = getString(R.string.total_amount, tipAmount + serviceCost)
+        val fmt = NumberFormat.getCurrencyInstance()
+        vBinding.tipAmount.text = getString(R.string.tip_amount, fmt.format(tipAmount))
+        vBinding.totalAmount.text = getString(R.string.total_amount, fmt.format(tipAmount + serviceCost))
     }
 }
